@@ -34,7 +34,7 @@ function Login() {
           type="submit"
           style={{ width: "100%", marginBottom: "4rem" }}
         >
-          Autentificare
+          Log In
         </Button>
       </Form>
       <h5 style={{ width: "100%" }}>

@@ -26,7 +26,7 @@ function Home() {
           "http://localhost:8000/api/listings/",
           { cancelToken: source.token }
         );
-        console.log(response.data);
+        // console.log(response.data);
         setAllListings(response.data);
         setDataIsLoading(false);
       } catch (error) {
@@ -63,12 +63,14 @@ function Home() {
 
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>What car are you looking for?</h2>
+      <h2 style={{ textAlign: "center", paddingTop: "30px" }}>
+        What car are you looking for?
+      </h2>
       <Search />
       <hr style={{ padding: "0px", marginTop: "25px", marginBottom: "0px" }} />
       <div
         style={{
-          backgroundColor: "#F0FFFF",
+          backgroundColor: "#F0F8FF",
           paddingBottom: "1rem",
           paddingTop: "1rem",
         }}
@@ -83,15 +85,16 @@ function Home() {
         >
           Latest Listings
         </h2>
-        <Row>
+        <Row style={{ marginRight: "0px" }}>
           {" "}
-          {allListings.slice(0, 5).map((listing) => {
+          {allListings.slice(0, 7).map((listing) => {
             return (
               <Card
                 style={{
                   width: "16rem",
                   cursor: "pointer",
                   marginLeft: "1rem",
+                  marginBottom: "1rem",
                 }}
               >
                 <Card.Img
@@ -107,13 +110,12 @@ function Home() {
                 <Card.Body>
                   <Card.Title>{listing.title}</Card.Title>
                   <Card.Text>
-                    {listing.cylinder_capacity} {listing.engine} ·{" "}
-                    {listing.gearbox} ·{" "}
+                    {listing.fabrication_year} · {listing.cylinder_capacity}{" "}
+                    {listing.engine} · {listing.gearbox} ·{" "}
                     {listing.transmission === "4x4"
                       ? listing.transmission
                       : `${listing.transmission} wheel drive`}{" "}
-                    · {listing.fabrication_year} · {commafy(listing.kilometers)}{" "}
-                    KM
+                    · {commafy(listing.mileage)} Km
                   </Card.Text>
                   <Card.Text style={{ fontWeight: "bolder" }}>
                     {commafy(listing.price)} EUR

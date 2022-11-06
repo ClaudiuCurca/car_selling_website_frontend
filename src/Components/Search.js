@@ -78,6 +78,7 @@ function Search() {
   }
 
   const [state, dispatch] = useImmerReducer(ReducerFuction, initialState);
+
   return (
     <Container style={{ width: "60rem" }}>
       <Form>
@@ -85,7 +86,7 @@ function Search() {
           <Form.Group as={Col}>
             <Form.Label>Body Type</Form.Label>
             <Form.Select defaultValue="">
-              <option />
+              <option key={"nothing"} />
               {bodyTypeOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -108,7 +109,7 @@ function Search() {
                 })
               }
             >
-              <option value={["", ""]} />
+              <option key={"nothing"} value={["", ""]} />
               {makeAndModels.map((option, index) => (
                 <option key={option.brand} value={[option.brand, index]}>
                   {option.brand}
@@ -124,7 +125,7 @@ function Search() {
             <Form.Group as={Col}>
               <Form.Label>Model</Form.Label>
               <Form.Select defaultValue="">
-                <option />
+                <option key={"nothing2"} />
                 {makeAndModels[state.brandIndexValue].models.map((option) => (
                   <option key={option} value={option}>
                     {option}
@@ -143,7 +144,7 @@ function Search() {
           <Form.Group as={Col}>
             <Form.Label>Engine</Form.Label>
             <Form.Select defaultValue="">
-              <option />
+              <option key={"nothing3"} />
               {fuelOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -175,7 +176,7 @@ function Search() {
                 })
               }
             >
-              <option value={""} />
+              <option key={"nothing4"} value={""} />
               {constructionYearOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
@@ -183,13 +184,12 @@ function Search() {
               ))}
             </Form.Select>
           </Form.Group>
-
           {state.minConstructionYearValue < 2022 &&
           state.minConstructionYearValue >= 2000 ? (
             <Form.Group as={Col}>
               <Form.Label>Maximum fabrication year</Form.Label>
               <Form.Select defaultValue="">
-                <option value={""} />
+                <option key={"nothing5"} value={""} />
                 {constructionYearOptions
                   .slice(0, 2022 - state.minConstructionYearValue + 1)
                   .map((option) => (
@@ -203,7 +203,7 @@ function Search() {
             <Form.Group as={Col}>
               <Form.Label>Maximum fabrication year</Form.Label>
               <Form.Select disabled defaultValue="">
-                <option></option>
+                <option key={"nothing6"}></option>
               </Form.Select>
             </Form.Group>
           )}

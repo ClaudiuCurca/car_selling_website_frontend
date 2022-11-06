@@ -12,12 +12,7 @@ function Header() {
 
   return (
     <>
-      <Navbar
-        bg="primary"
-        variant="dark"
-        fixed="top"
-        style={{ height: "65px" }}
-      >
+      <Navbar bg="light" variant="light" fixed="top" style={{ height: "65px" }}>
         <Container>
           <Navbar.Brand
             style={{ cursor: "pointer" }}
