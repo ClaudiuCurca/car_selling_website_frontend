@@ -31,7 +31,7 @@ function Listings() {
         setAllListings(response.data);
         setDataIsLoading(false);
       } catch (error) {
-        console.log(error.message);
+        source.cancel();
       }
     }
     GetAllListings();
@@ -72,6 +72,7 @@ function Listings() {
               paddingTop: "25px",
               paddingBottom: "25px",
             }}
+            key={listing.id}
           >
             <Card style={{ height: "200px" }}>
               <Row>

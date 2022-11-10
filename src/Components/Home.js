@@ -30,7 +30,7 @@ function Home() {
         setAllListings(response.data);
         setDataIsLoading(false);
       } catch (error) {
-        console.log(error.message);
+        source.cancel();
       }
     }
     GetAllListings();
@@ -96,6 +96,7 @@ function Home() {
                   marginLeft: "1rem",
                   marginBottom: "1rem",
                 }}
+                key={listing.id}
               >
                 <Card.Img
                   variant="top"
