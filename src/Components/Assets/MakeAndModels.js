@@ -1,29 +1,26 @@
+// The MIT License (MIT)
+
+// Copyright (c) 2016 Formidable
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 const makeAndModels = [
-  {
-    brand: "Acura",
-    models: [
-      "2.2CL",
-      "2.3CL",
-      "3.0CL",
-      "3.2CL",
-      "ILX",
-      "Integra",
-      "Legend",
-      "MDX",
-      "NSX",
-      "RDX",
-      "3.5 RL",
-      "RL",
-      "RSX",
-      "SLX",
-      "2.5TL",
-      "3.2TL",
-      "TL",
-      "TSX",
-      "Vigor",
-      "ZDX",
-    ],
-  },
   {
     brand: "Alfa Romeo",
     models: ["164", "8C Competizione", "GTV-6", "Milano", "Spider"],
@@ -84,10 +81,6 @@ const makeAndModels = [
     ],
   },
   {
-    brand: "Avanti",
-    models: ["Convertible", "Coupe", "Sedan"],
-  },
-  {
     brand: "Bentley",
     models: [
       "Arnage",
@@ -133,7 +126,6 @@ const makeAndModels = [
       "335i",
       "335is",
       "335xi",
-      "ActiveHybrid 3",
       "325",
       "524td",
       "525i",
@@ -147,13 +139,11 @@ const makeAndModels = [
       "530xi",
       "533i",
       "535i",
-      "535i Gran Turismo",
       "535xi",
       "540i",
       "545i",
       "550i",
       "550i Gran Turismo",
-      "ActiveHybrid 5",
       "633CSi",
       "635CSi",
       "640i",
@@ -169,7 +159,6 @@ const makeAndModels = [
       "740iL",
       "740Li",
       "745i",
-      "745Li",
       "750i",
       "750iL",
       "750Li",
@@ -197,31 +186,6 @@ const makeAndModels = [
       "X6",
       "Z3",
       "Z4",
-      "Z8",
-    ],
-  },
-  {
-    brand: "Buick",
-    models: [
-      "Century",
-      "Electra",
-      "Enclave",
-      "Encore",
-      "LaCrosse",
-      "Le Sabre",
-      "Lucerne",
-      "Park Avenue",
-      "Rainier",
-      "Reatta",
-      "Regal",
-      "Rendezvous",
-      "Riviera",
-      "Roadmaster",
-      "Skyhawk",
-      "Skylark",
-      "Somerset",
-      "Terraza",
-      "Verano",
     ],
   },
   {
@@ -420,10 +384,6 @@ const makeAndModels = [
     ],
   },
   {
-    brand: "Eagle",
-    models: ["Medallion", "Premier", "Summit", "Talon", "Vision"],
-  },
-  {
     brand: "Ferrari",
     models: [
       "308 GTB Quattrovalvole",
@@ -527,43 +487,6 @@ const makeAndModels = [
       "Transit Connect",
       "Windstar",
       "ZX2 Escort",
-    ],
-  },
-  {
-    brand: "Freightliner",
-    models: ["Sprinter"],
-  },
-  {
-    brand: "Geo",
-    models: ["Metro", "Prizm", "Spectrum", "Storm", "Tracker"],
-  },
-  {
-    brand: "GMC",
-    models: [
-      "Acadia",
-      "Caballero",
-      "Canyon",
-      "Envoy",
-      "Envoy XL",
-      "Envoy XUV",
-      "Jimmy",
-      "Rally Wagon",
-      "S15 Jimmy",
-      "S15 Pickup",
-      "Safari",
-      "Savana",
-      "Sierra C/K1500",
-      "Sierra C/K2500",
-      "Sierra C/K3500",
-      "Sonoma",
-      "Suburban",
-      "Syclone",
-      "Terrain",
-      "TopKick C4500",
-      "Typhoon",
-      "Vandura",
-      "Yukon",
-      "Yukon XL",
     ],
   },
   {
@@ -870,7 +793,7 @@ const makeAndModels = [
   },
   {
     brand: "McLaren",
-    models: ["MP4-12C"],
+    models: ["720s"],
   },
   {
     brand: "Mercedes-Benz",
@@ -1092,8 +1015,6 @@ const makeAndModels = [
       "350Z",
       "370Z",
       "Altima",
-      "Armada",
-      "Axxess",
       "Cube",
       "Frontier",
       "GT-R",
@@ -1101,7 +1022,6 @@ const makeAndModels = [
       "Leaf",
       "Maxima",
       "Murano",
-      "Murano CrossCabriolet",
       "NV",
       "NX",
       "Pathfinder",
@@ -1114,90 +1034,14 @@ const makeAndModels = [
       "Titan",
       "Van",
       "Versa",
-      "Xterra",
     ],
   },
-  {
-    brand: "Oldsmobile",
-    models: [
-      "88",
-      "Achieva",
-      "Alero",
-      "Aurora",
-      "Bravada",
-      "Custom Cruiser",
-      "Cutlass",
-      "Cutlass Calais",
-      "Cutlass Ciera",
-      "Cutlass Supreme",
-      "Firenza",
-      "Intrigue",
-      "Ninety-Eight",
-      "Omega",
-      "Regency",
-      "Silhouette",
-      "Toronado",
-    ],
-  },
+
   {
     brand: "Peugeot",
     models: ["405", "504", "505", "604"],
   },
-  {
-    brand: "Plymouth",
-    models: [
-      "Acclaim",
-      "Arrow",
-      "Breeze",
-      "Caravelle",
-      "Champ",
-      "Colt",
-      "Conquest",
-      "Gran Fury",
-      "Grand Voyager",
-      "Horizon",
-      "Laser",
-      "Neon",
-      "Prowler",
-      "Reliant",
-      "Sapporo",
-      "Scamp",
-      "Sundance",
-      "Trailduster",
-      "Voyager",
-    ],
-  },
-  {
-    brand: "Pontiac",
-    models: [
-      "1000",
-      "6000",
-      "Aztek",
-      "Bonneville",
-      "Catalina",
-      "Fiero",
-      "Firebird",
-      "G3",
-      "G5",
-      "G6",
-      "G8",
-      "Grand Am",
-      "Grand Prix",
-      "GTO",
-      "J2000",
-      "Le Mans",
-      "Montana",
-      "Parisienne",
-      "Phoenix",
-      "Safari",
-      "Solstice",
-      "Sunbird",
-      "Sunfire",
-      "Torrent",
-      "Trans Sport",
-      "Vibe",
-    ],
-  },
+
   {
     brand: "Porsche",
     models: [
@@ -1214,73 +1058,20 @@ const makeAndModels = [
     ],
   },
   {
-    brand: "RAM",
-    models: ["1500", "2500", "3500", "4500"],
-  },
-  {
     brand: "Renault",
-    models: ["18i", "Fuego", "Le Car", "R18", "Sportwagon"],
+    models: ["Clio", "Zoe"],
   },
   {
     brand: "Rolls-Royce",
-    models: [
-      "Camargue",
-      "Corniche",
-      "Ghost",
-      "Park Ward",
-      "Phantom",
-      "Silver Dawn",
-      "Silver Seraph",
-      "Silver Spirit",
-      "Silver Spur",
-    ],
+    models: ["Dawn", "Ghost", "Phantom", "Cullinan"],
   },
   {
     brand: "Saab",
     models: ["9-2X", "9-3", "9-4X", "9-5", "9-7X", "900", "9000"],
   },
   {
-    brand: "Saturn",
-    models: [
-      "Astra",
-      "Aura",
-      "ION",
-      "L100",
-      "L200",
-      "L300",
-      "LS",
-      "LW1",
-      "LW2",
-      "LW200",
-      "LW300",
-      "Outlook",
-      "Relay",
-      "SC1",
-      "SC2",
-      "Sky",
-      "SL",
-      "SL1",
-      "SL2",
-      "SW1",
-      "SW2",
-      "Vue",
-    ],
-  },
-  {
-    brand: "Scion",
-    models: ["FR-S", "iQ", "tC", "xA", "xB", "xD"],
-  },
-  {
     brand: "smart",
-    models: ["fortwo"],
-  },
-  {
-    brand: "SRT",
-    models: ["Viper"],
-  },
-  {
-    brand: "Sterling",
-    models: ["825", "827"],
+    models: ["fortwo", "forfour"],
   },
   {
     brand: "Subaru",
@@ -1324,7 +1115,7 @@ const makeAndModels = [
   },
   {
     brand: "Tesla",
-    models: ["Roadster", "Model S"],
+    models: ["Roadster", "Model S", "Model 3"],
   },
   {
     brand: "Toyota",
@@ -1357,16 +1148,11 @@ const makeAndModels = [
       "Supra",
       "T100",
       "Tacoma",
-      "Tercel",
       "Tundra",
       "Van",
       "Venza",
       "Yaris",
     ],
-  },
-  {
-    brand: "Triumph",
-    models: ["TR7", "TR8"],
   },
   {
     brand: "Volkswagen",
@@ -1424,10 +1210,6 @@ const makeAndModels = [
       "XC70",
       "XC90",
     ],
-  },
-  {
-    brand: "Yugo",
-    models: ["GV", "GVC", "GVL", "GVS", "GVX"],
   },
 ];
 
